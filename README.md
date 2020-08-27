@@ -4,6 +4,18 @@ Here you will find a couple of code snippets as well
 as some notes used in RIT course CSCI605's recitation
 sessions.
 
+###HW1.1
+
+- Prime.java
+
+###HW1.2
+
+- Coins.java
+
+###HW1.3
+
+- Numbers.java
+
 ###HW2.1
 
 - hw21a.tiff
