@@ -23,7 +23,7 @@ public class Literals2 {
         String a = "123";
         String b = "12" + "3";
         String c = stringOneTwo + "3";
-        String d = intOne + "23";
+        String d = intOne + "23"; // danger will robinson
         String e = "1" + 23;
 
         System.out.println ( "( a == b ) evaluates as " + ( a == b ) );
