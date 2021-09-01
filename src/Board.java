@@ -19,15 +19,15 @@ public class Board {
 	static boolean verbose 		= false;
 
 	static public void copyTheBoard() {
-		for (int row = 0; row < MAX_ROWS; row ++ )	{	
-			for (int column = 0; column < MAX_COLUMNS; column ++ )	{	
+		for (int row = 0; row < MAX_ROWS; row ++ )	{
+			for (int column = 0; column < MAX_COLUMNS; column ++ )	{
 				theBestBoard[row][column] = theBoard[row][column];
 			}
 		}
 	}
 	static public void printTheBoard(char theBoard[][]) {
-		for (int row = 0; row < MAX_ROWS; row ++ )	{	
-			for (int column = 0; column < MAX_COLUMNS; column ++ )	{	
+		for (int row = 0; row < MAX_ROWS; row ++ )	{
+			for (int column = 0; column < MAX_COLUMNS; column ++ )	{
 				System.out.print(" " + theBoard[row][column]);
 			}
 			System.out.println();
@@ -39,13 +39,13 @@ public class Board {
 	static public void initTheBoard() {
 		soManyKings = 0;
 		maxNofKings = 0;
-		for (int row = 0; row < MAX_ROWS; row ++ )	{	
-			for (int column = 0; column < MAX_COLUMNS; column ++ )	{	
+		for (int row = 0; row < MAX_ROWS; row ++ )	{
+			for (int column = 0; column < MAX_COLUMNS; column ++ )	{
 				theBoard[row][column] = ' ';
 			}
 		}
-		for (int row = 1; row < MAX_ROWS; row ++ )	{	
-			for (int column = 1; column < MAX_COLUMNS; column ++ )	{	
+		for (int row = 1; row < MAX_ROWS; row ++ )	{
+			for (int column = 1; column < MAX_COLUMNS; column ++ )	{
 				theBoard[row][column] = whatColor(row, column);
 			}
 		}
@@ -105,29 +105,29 @@ public class Board {
 	 *			|
 	 *			v
 	 *			row
-	 *			
+	 *
 	 *			--+----+----+----+--------
-	 *			  | 1  | 8  | 7  |        
+	 *			  | 1  | 8  | 7  |
 	 *			--+----+----+----+--------
-	 *			  | 2  |    | 6  |       
+	 *			  | 2  |    | 6  |
 	 *			--+----+----+----+--------
-	 *			  | 3  | 4  | 5  |       
+	 *			  | 3  | 4  | 5  |
 	 *			--+----+----+----+--------
 	 */
 	static public boolean isSave(int thisRow, int thisColumn) {
 		return  	isThereAking(thisRow - 0, thisColumn - 0 )			&&	// 0
-			isThereAking(thisRow - 1, thisColumn - 1 )			&&	// 1
-			isThereAking(thisRow - 0, thisColumn - 1 )			&&	// 2
-			isThereAking(thisRow + 1, thisColumn - 1 )			&&	// 3
-			isThereAking(thisRow + 1, thisColumn + 0 )			&&	// 4
-			isThereAking(thisRow + 1, thisColumn + 1 )			&&	// 5
-			isThereAking(thisRow - 0, thisColumn + 1 )			&&	// 6
-			isThereAking(thisRow - 1, thisColumn + 1 )			&&	// 7
-			isThereAking(thisRow - 1, thisColumn - 0 );				// 8
+				isThereAking(thisRow - 1, thisColumn - 1 )			&&	// 1
+				isThereAking(thisRow - 0, thisColumn - 1 )			&&	// 2
+				isThereAking(thisRow + 1, thisColumn - 1 )			&&	// 3
+				isThereAking(thisRow + 1, thisColumn + 0 )			&&	// 4
+				isThereAking(thisRow + 1, thisColumn + 1 )			&&	// 5
+				isThereAking(thisRow - 0, thisColumn + 1 )			&&	// 6
+				isThereAking(thisRow - 1, thisColumn + 1 )			&&	// 7
+				isThereAking(thisRow - 1, thisColumn - 0 );				// 8
 	}
 	static public void placeKings(int startC, int startR)	{
-		for (int row = startR; row < MAX_ROWS; row ++ )	{	
-			for (int column = startC; column < MAX_COLUMNS; column ++ )	{	
+		for (int row = startR; row < MAX_ROWS; row ++ )	{
+			for (int column = startC; column < MAX_COLUMNS; column ++ )	{
 				char thisIsOnTheSquare = theBoard[row][column];
 				if ( thisIsOnTheSquare != NOT_LEGAL ) {
 					if ( isSave(row, column) )	{
@@ -147,13 +147,13 @@ public class Board {
 	}
 	static public void printMaxKings()	{
 		System.out.println("maximum number of kings = " + maxNofKings );
-    }
-    public static void main(String[] args) {
-	initTheBoard();
-	createWall();
-	printTheBoard(theBoard);
-	placeKings(1, 1);
-	printMaxKings();
-	printTheBoard(theBestBoard);
-    }
+	}
+	public static void main(String[] args) {
+		initTheBoard();
+		createWall();
+		printTheBoard(theBoard);
+		placeKings(1, 1);
+		printMaxKings();
+		printTheBoard(theBestBoard);
+	}
 }
