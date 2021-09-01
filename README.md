@@ -6,27 +6,26 @@ sessions.
 
 ### HW1.1
 
-- Prime.java
+[comment]: <> (- Prime.java)
+- NearlyPerfectNumber.java
 
 ### HW1.2
 
-- Coins.java
+[comment]: <> (- Coins.java)
+- Water.java
 
 ### HW1.3
 
-- Numbers.java
+[comment]: <> (- Numbers.java)
+- Board.java
+
+### 
 
 ### HW2.1
 
-- hw21a.tiff
-- hw21b.tiff
-- hw21c.tiff
-
-### HW2.2
-
 - Number2.java
 
-### HW2.3
+### HW2.2 / 2.3
 - Literals1.java
 - hw23a.tiff
 - Literals2.java
