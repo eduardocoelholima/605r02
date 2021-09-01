@@ -36,7 +36,8 @@ sessions.
 
 Please let me know if you have any questions. You can
 always use MyCourses discussion forum (good idea) or
-email me or Professor Bischof. I will reply the questions
+email me, Professor Bischof or Professor Pakeeza depending
+on your section. I will reply the questions
 either to the discussion forum or will email everyone so
 every student can benefit from the answers provided.
 
