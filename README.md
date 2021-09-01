@@ -6,17 +6,14 @@ sessions.
 
 ### HW1.1
 
-[comment]: <> (- Prime.java)
 - NearlyPerfectNumber.java
 
 ### HW1.2
 
-[comment]: <> (- Coins.java)
 - Water.java
 
 ### HW1.3
 
-[comment]: <> (- Numbers.java)
 - Board.java
 
 ### 
